@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Rechart from './Components/Rechart/Rechart';
+import Strak from './Components/Strak/Strak';
+import Material from './Components/materialui/Material';
+import { Drawer } from '@material-ui/core';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Rechart></Rechart>
+      <Strak></Strak>
+      <Material></Material>
+      <Drawer></Drawer>
     </div>
   );
 }
